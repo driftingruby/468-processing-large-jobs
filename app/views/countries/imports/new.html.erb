@@ -1,0 +1,8 @@
+<%= form_with url: countries_imports_path do |f| %>
+  <div class="mb-3">
+    <%= f.label :file, class: "form-label" %>
+    <%= f.file_field :file, class: "form-control" %>
+  </div>
+
+  <%= f.submit "Import", class: "btn btn-primary" %>
+<% end %>

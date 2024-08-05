@@ -1,0 +1,12 @@
+<div id="<%= dom_id country %>" class="scaffold_record">
+  <p>
+    <strong>Name:</strong>
+    <%= country.name %>
+  </p>
+
+  <p>
+    <strong>Flag:</strong>
+    <%= link_to country.flag.filename, country.flag if country.flag.attached? %>
+  </p>
+
+</div>

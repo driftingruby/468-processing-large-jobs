@@ -1,0 +1,9 @@
+<%= render @country %>
+
+<div>
+  <%= link_to "Edit", edit_country_path(@country) %> |
+  <%= link_to "Destroy", country_path(@country),
+    "data-turbo-method": :delete,
+    "data-turbo-confirm": "Are you sure?" %> |
+  <%= link_to "Back to countries", countries_path %>
+</div>
